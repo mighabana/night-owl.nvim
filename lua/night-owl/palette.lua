@@ -1,6 +1,6 @@
 local colors = {
 	fg = "#d6deeb",
-	bg = "#021727",
+	bg = "#081426",
 	folded_bg = "#092135",
 	cursor_fg = "#805a3e",
 	cursor_bg = "#80a4c2",
