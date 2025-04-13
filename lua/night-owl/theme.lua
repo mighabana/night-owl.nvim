@@ -126,12 +126,12 @@ function theme.set_highlights(options)
 	hl(0, "@keyword.repeat", { link = "Statement" })
 	hl(0, "@keyword.return", { link = "Statement" })
 	hl(0, "@keyword.static", { link = "Statement" })
-	hl(0, "@label", { fg = palette.cyan2, bg = "NONE" })
+	hl(0, "@label", { fg = palette.foreground, bg = "NONE" })
 	hl(0, "@module.r", { link = "@type.class" })
 	hl(0, "@module.vim", { link = "@type.class" })
-	hl(0, "@namespace.vim", { fg = palette.light_blue, bg = "NONE", italic = options.italics })
+	hl(0, "@namespace.vim", { fg = palette.orange, bg = "NONE", italic = options.italics })
 	hl(0, "@object.key", { link = "Statement" })
-	hl(0, "@object.property", { fg = palette.light_yellow, bg = "NONE", italic = options.italics })
+	hl(0, "@object.property", { fg = palette.yellow, bg = "NONE", italic = options.italics })
 	hl(0, "@operator.lua", { fg = palette.cyan2, bg = "NONE" })
 	hl(0, "@operator.of", { fg = palette.cyan2, bg = "NONE" })
 	hl(0, "@operator.toml", { fg = palette.fg, bg = "NONE" })
@@ -142,8 +142,8 @@ function theme.set_highlights(options)
 	hl(0, "@property.toml", { fg = palette.magenta, bg = "NONE", nocombine = true })
 	hl(0, "@punctuation.accessor", { link = "Statement" })
 	hl(0, "@punctuation.special.bash", { fg = palette.green, bg = "NONE" })
-	hl(0, "@string.json", { fg = palette.magenta2, bg = "NONE" })
-	hl(0, "@string.regex", { fg = palette.blue, bg = "NONE", nocombine = true })
+	hl(0, "@string.json", { fg = palette.yellow, bg = "NONE" })
+	hl(0, "@string.regex", { fg = palette.green, bg = "NONE", nocombine = true })
 	hl(0, "@string.regexFlags", { fg = palette.blue8, bg = "NONE", nocombine = true })
 	hl(0, "@tag.attribute", { fg = palette.green, bg = "NONE", italic = options.italics })
 	hl(0, "@tag.builtin", { fg = palette.light_cyan, bg = "NONE", nocombine = true })
@@ -155,14 +155,14 @@ function theme.set_highlights(options)
 	hl(0, "@text.strong", { fg = palette.green, bg = "NONE", bold = options.bold })
 	hl(0, "@text.todo", { fg = palette.bg, bg = palette.fg })
 	hl(0, "@text.uri", { fg = palette.light_red, bg = "NONE", underline = options.underline })
-	hl(0, "@type", { fg = palette.orange2, bg = "NONE", italic = options.italics })
+	hl(0, "@type", { fg = palette.orange, bg = "NONE", italic = options.italics })
 	hl(0, "@type.builtin", { fg = palette.green, bg = "NONE" })
 	hl(0, "@type.builtin.python", { fg = palette.green, bg = "NONE", nocombine = true })
-	hl(0, "@type.class", { fg = palette.orange2, bg = "NONE", nocombine = true })
+	hl(0, "@type.class", { fg = palette.orange, bg = "NONE", nocombine = true })
 	hl(0, "@type.inheritedClass", { fg = palette.green, bg = "NONE", nocombine = true })
-	hl(0, "@type.python", { fg = palette.orange2, bg = "NONE", nocombine = true })
+	hl(0, "@type.python", { fg = palette.orange, bg = "NONE", nocombine = true })
 	hl(0, "@type.toml", { fg = palette.green, bg = "NONE", italic = options.italics })
-	hl(0, "@type.typescript", { fg = palette.orange2, bg = "NONE", nocombine = true })
+	hl(0, "@type.typescript", { fg = palette.orange, bg = "NONE", nocombine = true })
 	hl(0, "@variable", { fg = palette.parameter, bg = "NONE" })
 	hl(0, "@variable.builtin", { fg = palette.cyan2, bg = "NONE" })
 	hl(0, "@variable.builtin.vim", { fg = palette.cyan2, bg = "NONE", italic = options.italics })
@@ -255,9 +255,12 @@ function theme.set_highlights(options)
 	hl(0, "IlluminatedWordRead", { fg = "NONE", bg = palette.word_highlight })
 	hl(0, "IlluminatedWordWrite", { fg = "NONE", bg = palette.word_highlight_write })
 
+  -- SQL
+  -- hl(0, "sqlColumnName", { fg = palette.green, italic=true })
+
 	-- DevIcons
 	hl(0, "DevIconLua", { fg = palette.purple2, bg = "NONE" })
-	hl(0, "DevIconTxt", { fg = palette.green2, bg = "NONE" })
+	hl(0, "DevIconTxt", { fg = palette.green, bg = "NONE" })
 	hl(0, "DevIconScheme", { fg = palette.magenta, bg = "NONE" })
 
 	-- RainbowDelimiters
@@ -271,7 +274,7 @@ function theme.set_highlights(options)
 	-- Terminal colors
 	vim.g.terminal_color_0 = palette.dark -- Black
 	vim.g.terminal_color_1 = palette.dark_red -- Red
-	vim.g.terminal_color_2 = palette.green2 -- Green
+	vim.g.terminal_color_2 = palette.green -- Green
 	vim.g.terminal_color_3 = palette.yellow -- Yellow
 	vim.g.terminal_color_4 = palette.blue -- Blue
 	vim.g.terminal_color_5 = palette.purple -- Magenta
@@ -281,7 +284,7 @@ function theme.set_highlights(options)
 	-- -- Bright colors
 	vim.g.terminal_color_8 = palette.gray3 -- Bright Black
 	vim.g.terminal_color_9 = palette.red -- Bright Red
-	vim.g.terminal_color_10 = palette.green -- Bright Green
+	vim.g.terminal_color_10 = palette.green2 -- Bright Green
 	vim.g.terminal_color_11 = palette.light_yellow -- Bright Yellow
 	vim.g.terminal_color_12 = palette.light_blue -- Bright Blue
 	vim.g.terminal_color_13 = palette.magenta -- Bright Magenta
