@@ -1,5 +1,5 @@
 local colors = {
-	fg = "#d6deeb",
+	fg = "#fffed6",
 	bg = "#081426",
 	folded_bg = "#092135",
 	cursor_fg = "#805a3e",
